@@ -4,7 +4,7 @@ if ping -q -c 1 -W 1 8.8.8.8 > /dev/null 2>&1; then
   FULLNAMEOS=$(uname -o)
   NETNAME=$(uname -n)
   ARCH=$(arch)
-  IP=$(curl ifconfig.me > s)
+  IP=$(curl ifconfig.me)
   IPFORWARDED=$(curl ifconfig.me/forwarded)
   WHOAMI=$(whoami)
   clear
